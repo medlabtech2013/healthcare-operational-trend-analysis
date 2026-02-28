@@ -207,14 +207,19 @@ Clean data pipelines are foundational for AI systems
 
 ## 📊 Quantitative Findings
 
-From the simulated longitudinal dataset:
+From the simulated longitudinal dataset (966 total lab results):
 
-- ~18–22% of results were classified as **Moderate or High Risk**
-- ~8–12% of results fell into the **High Risk** category
-- Persistent abnormal WBC trends were detected in ~10% of monitored patients
-- HGB decline patterns were identified in ~12–15% of longitudinal cases
+- **0.10%** classified as High Risk
+- **5.49%** classified as Moderate Risk
+- **94.41%** classified as Low Risk
 
-These findings demonstrate how structured trend logic surfaces clinically relevant signals that single-point abnormal flags may miss.
+This distribution reflects a predominantly stable population with rare high-severity cases — a realistic operational scenario in many healthcare environments.
+
+Even with low high-risk prevalence, structured trend monitoring enables early identification of deterioration patterns that isolated abnormal flags may miss.
+
+### Class Imbalance Consideration
+
+The low prevalence of High Risk cases mirrors real-world healthcare distributions, highlighting the importance of precision, recall, and ROC analysis in predictive modeling.
 
 🧠 AI-Readiness Perspective
 
