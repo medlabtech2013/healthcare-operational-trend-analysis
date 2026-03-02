@@ -271,6 +271,28 @@ This would allow:
 
 The current rule-based scoring provides an explainable baseline for supervised learning models.
 
+## 🤖 Model Comparison (Imbalanced Classification)
+
+To address severe class imbalance (~0.62% high-risk prevalence), multiple strategies were evaluated:
+
+| Model | Recall (High Risk) | Precision | ROC AUC |
+|--------|-------------------|------------|---------|
+| Logistic (Balanced) | 1.00 | 0.25 | 0.9896 |
+| Logistic (SMOTE) | 1.00 | 0.25 | 0.9896 |
+| Random Forest (Balanced) | 0.50 | 0.50 | 0.9878 |
+
+### Key Insight
+
+- Logistic regression with class weighting successfully detected all high-risk cases.
+- Random Forest reduced false positives but missed one high-risk case.
+- SMOTE did not improve performance beyond class weighting.
+
+This highlights the real-world trade-off between recall and precision in rare-event healthcare prediction.
+
+### ROC Curve Comparison
+
+![ROC Comparison](visuals/roc_comparison.png)
+
 📌 About the Author
 
 Branden Bryant
