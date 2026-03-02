@@ -289,6 +289,19 @@ To address severe class imbalance (~0.62% high-risk prevalence), multiple strate
 
 This highlights the real-world trade-off between recall and precision in rare-event healthcare prediction.
 
+## 🏥 Operational Impact
+
+This system demonstrates how healthcare organizations can move from reactive abnormal flags to proactive risk intelligence.
+
+Key operational considerations:
+
+- Missing rare high-risk cases can delay clinical intervention.
+- High recall models prioritize early detection.
+- False positives increase alert burden and require workflow balancing.
+- Model selection must align with institutional risk tolerance.
+
+In a production setting, this framework could integrate with LIS/EHR systems to support clinical decision-making dashboards and automated alerting.
+
 ### ROC Curve Comparison
 
 ![ROC Comparison](visuals/roc_comparison.png)
