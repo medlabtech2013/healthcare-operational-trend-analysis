@@ -237,6 +237,19 @@ create the foundation for predictive modeling and machine learning integration.
 
 It bridges healthcare domain knowledge with scalable analytics design.
 
+## 🎤 60-Second Project Summary
+
+This project simulates a healthcare risk intelligence pipeline that:
+
+1. Cleans and structures longitudinal laboratory data  
+2. Applies explainable rule-based risk scoring  
+3. Detects deterioration trends across time  
+4. Trains multiple ML models to classify rare high-risk cases  
+5. Evaluates imbalanced classification strategies (class weighting, SMOTE)  
+6. Compares recall vs precision trade-offs for operational decision-making  
+
+It demonstrates healthcare domain knowledge combined with applied machine learning and operational systems thinking.
+
 🚀 Future Enhancements
 
 Logistic regression classification (High vs Non-High risk)
